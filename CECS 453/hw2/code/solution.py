@@ -18,7 +18,7 @@ def show_images(data):
     Do not return any arguments, just save the images you plot for your report.
     '''''
     for iImag in range(len(data)):
-        dataRow = data[iImag][1:]
+        dataRow = data[iImag][0:]
         pixels  = np.matrix(dataRow)   
         plt.figure(figsize=(2.5,2.5))
         plt.imshow(pixels ,cmap='gray')
